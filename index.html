@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
+  <script src="js/jquery-3.6.0.js"></script>
+  <script src="js/scripts.js"></script>
+  <title>Pig Dice</title>
+</head>
+<body> 
+  <div class="container">
+    <h1> Play Pig Dice! </h1>
+    <div class ="rulesButton">
+      <button id="rules" class="btn btn-primary">How to play</button>
+    </div>
+    <div class="rulesText">
+      <h2> How to play: </h2>
+        <ul>
+          <li> Roll the Dice </li>
+          <li> Keep rolling until you are comfortable with your score </li>
+          <li> Hold your score </li>
+          <li> Watch out! If you roll a 1 your rolls for the round won't count! </li>
+          <li> First to 100 wins! </li>
+        </ul>
+      </div>
+      <div id="playButton">
+        <button id="startGame" class="btn btn-primary">Play Pig Dice!</button>
+      </div>
+    <div class="row">
+      <div class="col">
+        <div class="card" style="width: 18rem;">
+          <h1 class="playerOneWin">WINNER!!!</h1>
+          <img class="card-img-top" src="img/peppaPig.png" alt="Peppa Pig">
+          <div class="card-body">
+            <h2 class="card-title">Player 1</h2>
+            <h2 class="total"> Total Score:<span id="playerOneScoreTotal"></span></h2>
+            <div id="player1PlayField">
+              <button id="playerOneRoll" class="btn btn-primary">Roll</button>
+              <button id="playerOneHold" class="btn btn-primary">Hold</button>
+              <div class="diceImages">
+                <img class="dice" id="one" src="img/1.png" alt="dice face 1">
+                <img class="dice" id="two" src="img/2.png" alt="dice face 2">
+                <img class="dice" id="three" src="img/3.png" alt="dice face 3">
+                <img class="dice" id="four" src="img/4.png" alt="dice face 4">
+                <img class="dice" id="five" src="img/5.png" alt="dice face 5">
+                <img class="dice" id="six" src="img/6.png" alt="dice face 6">
+              </div>
+              <h5> Current Die Roll:<span id="playerOneCurrentRoll"></span></h5>
+              <h5> Current Round Total:<span id="playerOneCurrentTotal"></span></h5>
+            </div> 
+          </div>
+          <h3 class="playerOneWin">Player 1 scored 100 or more pointes. Player 1 is the winner!</h3>
+        </div>
+      </div>
+      <div class = "col">
+        <div class="card" style="width: 18rem;">
+          <h1 class="playerTwoWin">WINNER!!!</h1>
+          <img class="card-img-top" src="img/missPiggy.png" alt="Miss Piggy">
+          <div class="card-body">
+            <h2 class="card-title">Player 2</h2>
+            <h2 class="total"> Total Score:<span id="playerTwoScoreTotal"></span></h2>
+            <div id="player2PlayField">
+              <button id="playerTwoRoll" class="btn btn-primary">Roll</button>
+              <button id="playerTwoHold" class="btn btn-primary">Hold</button>
+              <div class="diceImages">
+                <img class="dice" id="playerTwoOne" src="img/1.png" alt="dice face 1">
+                <img class="dice" id="playerTwoTwo" src="img/2.png" alt="dice face 2">
+                <img class="dice" id="playerTwoThree" src="img/3.png" alt="dice face 3">
+                <img class="dice" id="playerTwoFour" src="img/4.png" alt="dice face 4">
+                <img class="dice" id="playerTwoFive" src="img/5.png" alt="dice face 5">
+                <img class="dice" id="playerTwoSix" src="img/6.png" alt="dice face 6">
+              </div>
+              <h6>Current Die Roll:<span id="playerTwoCurrentRoll"></span></h6>
+              <h6> Current Round Total:<span id="playerTwoCurrentTotal"></h6>
+            </div>
+          </div>
+          <h3 class="playerTwoWin">Player 2 scored 100 or more points. Player 2 is the winner!</h3>
+        </div>
+      </div>
+    </div>
+    <div id="newGame">
+      <button id="newGameButton" class="btn btn-primary">Start a new game!</button>
+    </div>
+  </div>
+</body>
+</html>

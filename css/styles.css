@@ -1,0 +1,73 @@
+body {
+  margin: 50px;
+  background-color: pink;
+}
+
+.card {
+  background-color: pink;
+}
+
+.card-img-top {
+  width: auto;
+  height: 300px;
+}
+
+#player1PlayField {
+  display: none;
+
+}
+
+#player2PlayField {
+  display: none;
+}
+
+.playerOneWin {
+  display: none;
+  text-align: center;
+}
+
+.playerTwoWin {
+  display:none;
+  text-align: center;
+}
+
+#startGame {
+  margin-bottom: 25px;
+}
+
+#playButton {
+  text-align: center;
+}
+
+#newGame {
+  margin-top: 25px;
+  display: none;
+  text-align: center;
+}
+
+.rulesText{
+  display: none;
+}
+
+.rulesButton {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.diceImages{
+  text-align: center;
+}
+
+.dice{
+  margin: 15px;
+  display: none;
+  width:50%;
+  height: auto;
+}
+
+.total{
+  padding: 20px;
+  background-color: #e64a8c;
+  color: white;
+  text-align: center;
+}
