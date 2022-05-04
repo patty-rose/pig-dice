@@ -1,26 +1,26 @@
 body {
   margin: 50px;
-  background-color: pink;
+  background-color: rgb(254, 235, 235);
+  color: rgb(253, 84, 84);
+}
+
+.btn {
+  color:rgb(253, 84, 84);
+  background-color:rgb(254, 235, 235);
+  border: solid rgb(253, 84, 84);
+  margin: 5px
 }
 
 .card {
-  background-color: pink;
+  background-color: rgb(253, 84, 84);
+  color: rgb(254, 235, 235);
+  margin:10px 0 10px 0;
 }
-
+/* 
 .card-img-top {
   width: auto;
   height: 300px;
-}
-
-#player1PlayField {
-  display: none;
-
-}
-
-#player2PlayField {
-  display: none;
-}
-
+} */
 .playerOneWin {
   display: none;
   text-align: center;
@@ -31,27 +31,8 @@ body {
   text-align: center;
 }
 
-#startGame {
-  margin-bottom: 25px;
-}
-
-#playButton {
-  text-align: center;
-}
-
-#newGame {
-  margin-top: 25px;
-  display: none;
-  text-align: center;
-}
-
 .rulesText{
   display: none;
-}
-
-.rulesButton {
-  text-align: center;
-  margin-bottom: 25px;
 }
 
 .diceImages{
@@ -65,9 +46,30 @@ body {
   height: auto;
 }
 
+.card-title{
+  text-align: center;
+}
+
 .total{
-  padding: 20px;
-  background-color: #e64a8c;
-  color: white;
+  padding: 2%;
+  background-color: rgb(253, 84, 84);
+  color: rgb(254, 235, 235);
+  text-align: center;
+  font-size: 150%;
+}
+
+#player1PlayField {
+  display: none;
+  text-align: center;
+}
+
+#player2PlayField {
+  display: none;
+  text-align: center;
+}
+
+#newGame {
+  margin-top: 25px;
+  display: none;
   text-align: center;
 }
